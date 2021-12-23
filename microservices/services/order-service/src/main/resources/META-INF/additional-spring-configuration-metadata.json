@@ -1,0 +1,34 @@
+{
+  "properties": [
+    {
+      "name": "elastic.host",
+      "type": "java.lang.String",
+      "description": "hostname of elasticsearch server.",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "elastic.port",
+      "type": "java.lang.String",
+      "description": "port of elasticsearch server.",
+      "defaultValue": "9200"
+    },
+    {
+      "name": "elastic.index.name",
+      "type": "java.lang.String",
+      "description": "indexName of document.",
+      "defaultValue": "order"
+    },
+    {
+      "name": "elastic.index.shards",
+      "type": "java.lang.String",
+      "description": "number of shards of index.",
+      "defaultValue": "1"
+    },
+    {
+      "name": "elastic.index.replicas",
+      "type": "java.lang.String",
+      "description": "number of replicas of index.",
+      "defaultValue": "0"
+    }
+  ]
+}

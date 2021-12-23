@@ -1,0 +1,92 @@
+{
+  "mappings": {
+    "properties": {
+      "order": {
+        "properties": {
+          "transactionId": {
+            "type": "keyword"
+          },
+          "orderId": {
+            "type": "keyword"
+          },
+          "identification": {
+            "type": "keyword"
+          },
+          "created": {
+            "type": "long"
+          },
+          "shop": {
+            "properties": {
+              "shopId": {
+                "type": "long"
+              },
+              "name": {
+                "type": "text",
+                "analyzer": "n_gram_analyzer"
+              },
+              "location": {
+                "type": "text"
+              },
+              "version": {
+                "type": "long"
+              }
+            }
+          },
+          "member": {
+            "properties": {
+              "memberId": {
+                "type": "long"
+              },
+              "name": {
+                "type": "text",
+                "analyzer": "n_gram_analyzer"
+              },
+              "id": {
+                "type": "keyword"
+              },
+              "version": {
+                "type": "long"
+              }
+            }
+          },
+          "cart": {
+            "properties": {
+              "cartId": {
+                "type": "long"
+              },
+              "product": {
+                "properties": {
+                  "productId": {
+                    "type": "long"
+                  },
+                  "name": {
+                    "type": "text",
+                    "analyzer": "n_gram_analyzer"
+                  },
+                  "code": {
+                    "type": "keyword"
+                  },
+                  "price": {
+                    "type": "integer"
+                  },
+                  "version": {
+                    "type": "long"
+                  }
+                }
+              },
+              "count": {
+                "type": "integer"
+              },
+              "version": {
+                "type": "long"
+              }
+            }
+          },
+          "version": {
+            "type": "long"
+          }
+        }
+      }
+    }
+  }
+}

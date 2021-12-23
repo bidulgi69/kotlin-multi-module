@@ -1,0 +1,7 @@
+elastic:
+  host: localhost
+  port: 9200
+  index:
+    name: order
+    shards: 1
+    replicas: 0
